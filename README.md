@@ -1,0 +1,3 @@
+Q1: When you tap the button, getTip sets isLoading to true and calls setState, which swaps the button area for a CircularProgressIndicator. If it hits the fake error, hasError turns true and shows a RETRY button. Tapping RETRY just calls getTip again to restart the process and try fetching a tip.
+
+Q3: The tips come from a fixed list called tips that gives basic password safety advice. The feature completely ignores whatever the user types into the name, email, or password fields because it just picks a tip at random from the hardcoded list. This keeps user data private and ensures the tips don't mess with form validation.
